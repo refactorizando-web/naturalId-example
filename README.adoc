@@ -1,0 +1,27 @@
+= Example of use NaturalId with Hibernate and Spring Boot =
+
+== Introduction
+
+A natural identifier nevertheless identifies a database record or an object in the real world.
+So for that cases is necessary make use of a naturalId.
+
+Hibernate allows us model fields as a natural identifier of an entity and retrieve them from database.
+
+If you want more information you can visit: https://refactorizando.com/naturalid-hibernate-spring-boot
+
+== How does it work?
+
+Hibernate use the annotation NaturalId to indicate in an entity the use of this functionality.
+So to use NaturalId you have to add in your entity @NaturalId.
+
+     @NaturalId
+     private String isbn;
+
+== How does it run?
+
+This is Spring Boot application so to run it you can run the next command:
+
+   mvn spring-boot:run
+
+
+
